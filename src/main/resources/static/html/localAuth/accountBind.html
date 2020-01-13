@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>O2O-账号绑定</title>
+    <meta name="description" content="MSUI: Build mobile apps with simple HTML, CSS, and JS components.">
+    <meta name="author" content="阿里巴巴国际UED前端">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="../resources/image/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Google Web Fonts -->
+
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm-extend.min.css">
+</head>
+<body>
+<div class="page-group">
+    <div id="page-label-input" class="page">
+        <header class="bar bar-nav">
+            <h1 class="title" id="shopTitle">绑定微信</h1>
+        </header>
+        <div class="content">
+            <div class="list-block">
+                <ul>
+                    <!-- Text inputs -->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">用户名</div>
+                                <div class="item-input">
+                                    <input type="text" id="username" placeholder="输入用户名"
+                                           autocomplete="off" required="required">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">密码</div>
+                                <div class="item-input">
+                                    <input type="password" id="password" placeholder="输入密码"
+                                     required="required">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--验证码 kaptcha-->
+                    <li>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title label">验证码</div>
+                                <input type="text" id="j_kaptcha" placeholder="输入验证码">
+                                <div class="item-input">
+                                    <img id="kaptcha_img" alt="点击更换" title="点击更换" onclick="changeImage(this)"
+                                         src="../kaptcha">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="content-block">
+                <div class="row">
+                    <div class="col-50"><a href="#" onclick="javascript:history.back(-1);"
+                                           class="button button-big button-fill button-danger">返回</a></div>
+                    <div class="col-50"><a href="#" id="submit"
+                                           class="button button-big button-fill button-success">提交</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm-extend.min.js' charset='utf-8'></script>
+<script type="text/javascript" src='../resources/js/common/common.js' charset="UTF-8"></script>
+<script type="text/javascript" src='../resources/js/localAuth/accountBind.js' charset="UTF-8"></script>
+</body>
+</html>
