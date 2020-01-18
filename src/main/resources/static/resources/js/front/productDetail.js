@@ -6,7 +6,7 @@ $(function () {
     $.getJSON(productUrl, function (data) {
         if (data.success) {
             var product = data.row;
-            $('#product-img').attr('src', product.imgAddr);
+            $('#product-img').attr('src', getContextPath() + product.imgAddr);
             $('#product-time').text(new Date(product.lastEditTime).Format("yyyy-MM-dd"));
             $('#product-name').text(product.productName);
             $('#product-desc').append(product.productDesc);

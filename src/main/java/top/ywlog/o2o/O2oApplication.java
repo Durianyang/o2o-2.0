@@ -46,7 +46,7 @@ public class O2oApplication implements WebMvcConfigurer, ApplicationContextAware
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry)
     {
-        registry.addResourceHandler("/upload/**").addResourceLocations("file:/o2o/images/upload/");
+        registry.addResourceHandler("/upload/**").addResourceLocations("file:D:/o2o/images/upload/");
     }
 
     @Override

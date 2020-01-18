@@ -10,8 +10,7 @@ $(function () {
             headLineList.map(function (item, index) {
                 swiperHtml += ''
                     + '<div class="swiper-slide img-wrap">'
-                    + '<img class="banner-img" src="'
-                    + getContextPath()+  item.lineImg + '" alt="' + item.lineName + '">'
+                    + '<img class="banner-img" src="' + getContextPath() + item.lineImg + '" alt="' + item.lineName + '">'
                     + '</div>';
             });
             $('.swiper-wrapper').html(swiperHtml);
